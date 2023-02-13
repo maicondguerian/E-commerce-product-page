@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.TopMenuBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+ul{
+    list-style: none;
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    padding: 16px;
+}
+
+.avatar{
+    height: 50px;
+}
+
+.snickers{
+    height:445px;
+}
+
+.productThumb{
+    background-color: aquamarine;
+    width: 50%;
+}
+
+.contentWrapper{
+    display: flex;
+    flex-direction: row;
+}
