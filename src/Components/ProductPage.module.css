@@ -37,3 +37,11 @@ li{
     display: flex;
     flex-direction: row;
 }
+
+.priceWrapper{
+    display: flex;
+}
+
+.priceWrapper:last-child{
+    display: grid;
+}

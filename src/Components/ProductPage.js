@@ -31,10 +31,19 @@ export default function ProductPage() {
          <div className={style.contentWrapper}>
          <div className={style.productThumb}>
             <img className={style.snickers} src={snickers} alt="image-product-snickers"/>
-            <div>
-            <img className={style.snickers} src={snickers} alt="image-product-snickers"/>
-            </div>
          </div> 
+         <div className={style.productInfo}>
+            <p> Sneaker company</p>
+            <h1> Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your casual wear comparison. Featuring durable nubber outer sole, they'll withstand everything the weather can offer.</p>
+            <span className={style.priceWrapper}>
+                <h2>$125.00</h2>
+                <h4>
+                    50%
+                </h4>
+                <s>$250.00</s>
+            </span>
+            </div>
          </div>
         </div>
     </Fragment>
