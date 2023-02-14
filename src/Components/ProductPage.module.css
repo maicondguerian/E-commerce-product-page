@@ -39,9 +39,33 @@ li{
 }
 
 .priceWrapper{
+
     display: flex;
+    background-color: aqua;
+   
 }
 
-.priceWrapper:last-child{
-    display: grid;
+h3{
+    background-color: antiquewhite;
+}
+
+.aa{
+    background-color: brown;
+}
+
+.contentWrapper .aa{
+    background-color: fuchsia;
+    margin-left: 0;
+    text-align: left;
+}
+
+.addWrapper{
+    background-color: chartreuse;
+    display:flex;
+    flex-direction: row;
+}
+
+.addWrapper svg{
+    margin-right: 0.7rem;
+    
 }
