@@ -23,7 +23,7 @@ export default function ProductPage() {
         }
       };
 
-      
+
         return (
             <Fragment>
                 <div className={style.wrapperContainer}>
@@ -57,7 +57,7 @@ export default function ProductPage() {
                             <p>These low-profile sneakers are your casual wear comparison. Featuring durable nubber outer sole, they'll withstand everything the weather can offer.</p>
                             <span className={style.priceWrapper}>
                                 <h2>$125.00</h2>
-                                <h3 > 50%</h3>
+                                <h3  className={style.descount}> 50%</h3>
                             </span>
                             <p className={style.lastPrice}>$250.00</p>
                             <div className={style.ButtomWrapper}>
