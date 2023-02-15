@@ -12,15 +12,18 @@ export default function ProductPage() {
 
      const [counter, setCounter] = useState(0);
 
-     const increment  = () =>{
+     let increment  = () =>{
         setCounter(counter +1)
-        console.log('oi')
+      
      }
 
-     const decrement  = () =>{
-        setCounter(counter -1)
-        console.log('oi')
-     }
+     let decrement = () => {
+        if (counter > 0) {
+          setCounter(counter - 1);
+        }
+      };
+
+      
         return (
             <Fragment>
                 <div className={style.wrapperContainer}>
