@@ -11,7 +11,7 @@ import Card from "./Card";
 function CarrouselThumbMail() {
   const images = [image1, image2, image3, image4, image5];
 
-  const breakPoints = [{ itemToShow: 4, itemToScroll: 5 }];
+  const breakPoints = [{ itemsToShow: 3, itemsToScroll: 5 }];
 
   const [thumbNail] = useState([1, 2, 3, 4, 5]);
 
@@ -21,7 +21,7 @@ function CarrouselThumbMail() {
         <Carousel
           breakPoints={breakPoints}
           showArrows={true}
-          pagination={true}
+          pagination={false}
           enableAutoPlay={true}
           autoPlayInterval={3000}
           autoTabIndexVisibleItems={true}>

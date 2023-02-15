@@ -1,7 +1,7 @@
 import style from '../CarrouselThumbMail/carrouselThumbMail.module.css'
 import React from "react";
 
-const Card = ({ src , styles }) =>{
+const Card = ({ src }) =>{
     return(
         <>
         <div className={style.card}>

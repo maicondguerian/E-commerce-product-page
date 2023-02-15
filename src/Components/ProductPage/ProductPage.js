@@ -54,7 +54,7 @@ export default function ProductPage() {
                         <div className={style.productThumb}>
                             <img className={style.snickers} src={snickers} alt="image-product-snickers" />
                         <div className={style.iconPhotos}>
-                            <CarrouselThumbMail/>
+                        <CarrouselThumbMail/>
                         </div>
                         </div>
                         <div className={style.productInfo}>

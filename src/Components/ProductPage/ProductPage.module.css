@@ -189,17 +189,6 @@ hr{
   }
 
   .iconPhotos{
-    background-color: red;
-    width: 450px;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+    margin-top: 1.5rem;
+    margin-left: -1.5rem;
   }
-
-  /* .contentWrapper>:last-child{
-    width: 400px;
-    height: 100px;
-   
-  } */
