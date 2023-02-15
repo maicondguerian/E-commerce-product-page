@@ -1,0 +1,20 @@
+.AppCarrouselMini .card img {
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .AppCarrouselMini{
+    background-color: blue;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carouselWrapper{
+    max-width: 450px;
+    width: 100%;
+    background-color: yellow;
+  }
+  

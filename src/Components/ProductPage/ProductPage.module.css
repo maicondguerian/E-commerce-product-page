@@ -12,7 +12,11 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    
+}
+
+.logo{
+    cursor: pointer;
+    border: solid 1px;
 }
 
 ul{
@@ -26,6 +30,10 @@ li{
 
 .avatar{
     height: 50px;
+}
+
+.title{
+    font-weight: bolder;
 }
 
 hr{
@@ -54,7 +62,7 @@ hr{
 
 .description{
     color:  hsl(0, 0%, 17%);
-    font-size: 14px;
+    font-size: 15.1px;
     font-weight: 600;
     text-align: left
 }
@@ -171,8 +179,6 @@ hr{
   .custom, .customRight svg{
     position: relative;
     font-size: 16px;
-    
-    
   }
   .counterWrapper{
     display: flex;
@@ -181,3 +187,19 @@ hr{
     flex-direction: row;
     margin-right: 1rem;
   }
+
+  .iconPhotos{
+    background-color: red;
+    width: 450px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+  /* .contentWrapper>:last-child{
+    width: 400px;
+    height: 100px;
+   
+  } */
