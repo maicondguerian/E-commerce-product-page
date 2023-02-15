@@ -26,10 +26,17 @@ ul{
 li{
     display: inline-block;
     padding: 16px;
+    border: solid 1px;
+    
 }
+
+/* .cart >li:last-child{
+    
+} */
 
 .avatar{
     height: 50px;
+    display: none;
 }
 
 .title{
@@ -48,28 +55,32 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin:20px 0 50px 0;
 }
 
 .snickers{
     height:405px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .productThumb{
-    width: 35%;
+    max-width: 35%;
+    width: 520px;
 }
 
 .description{
     color:  hsl(0, 0%, 17%);
     font-size: 15.1px;
     font-weight: 600;
-    text-align: left
+    text-align: left;
+    background-color:aquamarine;
 }
 
 .productInfo{
-    max-width: 400px;
-    margin-top: 4rem;
+    max-width: 420px;
+    margin-top: 5rem;
+    background-color: antiquewhite;
 }
 
 .contentWrapper{
@@ -87,7 +98,7 @@ hr{
 .productDescriptionWrapper{
     display: flex;
     flex-direction: column;
-    row-gap: 1.3rem;
+    row-gap: 1.4rem;
 }
 
 .company{
@@ -125,7 +136,7 @@ hr{
     
 }
 .customButtom{
-    width: 270px;
+    width: 255px;
     height: 42px;
     border: transparent;
     border-radius: 5px;
@@ -140,6 +151,8 @@ hr{
     flex-direction: row-reverse;
 }
 
+
+
 .customRight{
     background-color:  hsl(223, 64%, 98%);
     color: hsl(26, 100%, 55%);
@@ -152,6 +165,7 @@ hr{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
+    
 }
 
 .custom {

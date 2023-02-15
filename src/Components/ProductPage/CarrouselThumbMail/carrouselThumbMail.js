@@ -13,7 +13,7 @@ function CarrouselThumbMail() {
 
   const breakPoints = [{ itemsToShow: 3, itemsToScroll: 5 }];
 
-  const [thumbNail] = useState([1, 2, 3, 4, 5]);
+  const [list] = useState([1, 2, 3, 4, 5]);
 
   return (
     <div className={style.AppCarrouselMini}>
@@ -25,7 +25,7 @@ function CarrouselThumbMail() {
           enableAutoPlay={true}
           autoPlayInterval={3000}
           autoTabIndexVisibleItems={true}>
-          {thumbNail.map((item, index) => (
+          {list.map((item, index) => (
             <Card src={images[index]} />
           ))}
         </Carousel>
