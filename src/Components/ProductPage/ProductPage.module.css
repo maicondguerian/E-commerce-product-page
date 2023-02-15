@@ -26,8 +26,6 @@ ul{
 li{
     display: inline-block;
     padding: 16px;
-    border: solid 1px;
-    
 }
 
 /* .cart >li:last-child{
@@ -70,17 +68,15 @@ hr{
 }
 
 .description{
-    color:  hsl(0, 0%, 17%);
+    color:  #2b2b2b;
     font-size: 15.1px;
     font-weight: 600;
     text-align: left;
-    background-color:aquamarine;
 }
 
 .productInfo{
     max-width: 420px;
     margin-top: 5rem;
-    background-color: antiquewhite;
 }
 
 .contentWrapper{

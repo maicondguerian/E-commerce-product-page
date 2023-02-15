@@ -31,7 +31,7 @@ function CarrouselThumbMail() {
     <div className={style.AppCarrouselMini}>
       <div className={style.carouselWrapper}>
         <ProductModal isOpen={modal} onClose={handleModalClose} />
-          <Carousel
+          <Carousel 
             breakPoints={breakPoints}
             showArrows={true}
             pagination={false}
