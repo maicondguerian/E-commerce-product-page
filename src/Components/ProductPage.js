@@ -3,7 +3,7 @@ import style from './ProductPage.module.css'
 import userAatar from './assets/image-avatar.png'
 import snickers from './assets/image-product-1.jpg'
 import CustomButtom from './Buttom/Buttom'
-
+import { FaMinus, FaPlus,  } from "react-icons/fa";
 
 
 
@@ -45,12 +45,14 @@ export default function ProductPage() {
                 <h2>$125.00</h2>
                 <h3 > 50%</h3>
             </span>
-            <p className={style.aa}>$250.00</p>
-            <div className={style.addWrapper}>
-                <CustomButtom   Icon={cartIcon} nameButtom='Add to cart '/> 
-                <CustomButtom customStyle={style}/>
-                {counter}
-                <CustomButtom nameButtom='teste' customStyle={style}/>
+            <p className={style.lastPrice}>$250.00</p>
+            <div className={style.ButtomWrapper}>
+                <div className={style.counterWrapper}>
+                    <CustomButtom IconCustom={FaMinus} nameButtom=''customStyle={style.custom}/> 
+                    <span className={style.counterValue}><h3>{counter}</h3></span>
+                    <CustomButtom IconCustom={FaPlus} nameButtom='' customStyle={style.customRight}/>
+                </div>
+                <CustomButtom customStyle={style.customButtom}  Icon={cartIcon} nameButtom=' Add to cart '/> 
             </div>
             </div>
          </div>

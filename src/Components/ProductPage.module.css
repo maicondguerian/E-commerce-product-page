@@ -11,7 +11,6 @@
 }
 
 ul{
-    list-style: none;
     list-style-type: none;
 }
 
@@ -19,6 +18,11 @@ li{
     display: inline-block;
     padding: 16px;
 }
+
+.ul2{
+    background-color: aquamarine;
+}
+
 
 .avatar{
     height: 50px;
@@ -36,36 +40,102 @@ li{
 .contentWrapper{
     display: flex;
     flex-direction: row;
+
 }
 
 .priceWrapper{
 
     display: flex;
     background-color: aqua;
-   
 }
 
 h3{
     background-color: antiquewhite;
+    font-size: 20px;
 }
 
-.aa{
+.lastPrice{
     background-color: brown;
 }
 
-.contentWrapper .aa{
+.contentWrapper .lastPrice{
     background-color: fuchsia;
     margin-left: 0;
     text-align: left;
 }
 
-.addWrapper{
+.ButtomWrapper{
     background-color: chartreuse;
     display:flex;
     flex-direction: row;
 }
 
-.addWrapper svg{
+.ButtomWrapper >.customButtom svg{
     margin-right: 0.7rem;
     
 }
+.customButtom{
+    width: 270px;
+    height: 55px;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: hsl(26, 100%, 55%);
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.customRight{
+    background-color:  hsl(223, 64%, 98%);
+    color: hsl(26, 100%, 55%);
+    border: none;
+    height:55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.custom {
+    background-color:  hsl(223, 64%, 98%);
+    color: hsl(26, 100%, 55%);
+    border: none;
+    height: 55px;
+    width: 55px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .counterValue{
+    background-color:  hsl(223, 64%, 98%);
+    width: 50px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom, .customRight svg{
+    position: relative;
+    font-size: 16px;
+    
+    
+  }
+  .counterWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 1rem;
+  }
