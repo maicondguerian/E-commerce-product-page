@@ -54,10 +54,10 @@ export default function ProductPage() {
                             <img className={style.snickers} src={snickers} alt="image-product-snickers" />
                         </div>
                         <div className={style.productInfo}>
-                            <div>
+                            <div className={style.productDescriptionWrapper}>
                                  <h5 className={style.company}> Sneaker company</h5>
                             <h1> Fall Limited Edition Sneakers</h1>
-                            <p className={style.description}>These low-profile sneakers are your casual wear comparison. Featuring durable nubber outer sole, they'll withstand everything the weather can offer.</p>
+                            <p className={style.description}>These low-profile sneakers are your perfect casual wear comparison. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
                             <span className={style.priceWrapper}>
                                 <h2 className={style.price}>$125.00</h2>
                                 <h3  className={style.descount}> 50%</h3>
@@ -71,7 +71,6 @@ export default function ProductPage() {
                                 </div>
                                 <CustomButtom customStyle={style.customButtom} Icon={cartIcon} nameButtom='Add to cart' />
                             </div>
-                                
                             </div>
                            
                         </div>

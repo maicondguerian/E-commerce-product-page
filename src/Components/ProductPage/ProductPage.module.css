@@ -24,11 +24,6 @@ li{
     padding: 16px;
 }
 
-.ul2{
-    background-color: aquamarine;
-}
-
-
 .avatar{
     height: 50px;
 }
@@ -54,53 +49,49 @@ hr{
 }
 
 .productThumb{
-    background-color: aquamarine;
     width: 35%;
 }
 
 .description{
-    
+    color:  hsl(0, 0%, 17%);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left
 }
 
 .productInfo{
-    background-color: hotpink;
     max-width: 400px;
     margin-top: 4rem;
-    
 }
 
 .contentWrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
-   
-    
 }
 
 .priceWrapper{
-
     display: flex;
     align-items: center;
-    background-color: aqua;
 }
 
-.lastPrice{
-    background-color: brown;
-   
+
+.productDescriptionWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
 }
 
 .company{
     text-transform: uppercase;
     font-weight:bolder;
     color: hsl(26, 100%, 55%);
-    
 }
 
 .contentWrapper .lastPrice{
-    background-color: fuchsia;
     margin-left: 0;
     text-align: left;
-    color:  hsl(223, 64%, 98%);
+    color: silver;
     font-weight: bolder;
 }
 
@@ -117,7 +108,6 @@ hr{
 }
 
 .ButtomWrapper{
-    background-color: chartreuse;
     display:flex;
     flex-direction: row;
 }
@@ -128,13 +118,13 @@ hr{
 }
 .customButtom{
     width: 270px;
-    height: 50px;
+    height: 42px;
     border: transparent;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     background-color: hsl(26, 100%, 55%);
     color: #ffff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -146,13 +136,13 @@ hr{
     background-color:  hsl(223, 64%, 98%);
     color: hsl(26, 100%, 55%);
     border: none;
-    height:50px;
+    height:42px;
     width: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     cursor: pointer;
 }
 
@@ -160,10 +150,10 @@ hr{
     background-color:  hsl(223, 64%, 98%);
     color: hsl(26, 100%, 55%);
     border: none;
-    height: 50px;
+    height: 42px;
     width: 55px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,7 +162,7 @@ hr{
   .counterValue{
     background-color:  hsl(223, 64%, 98%);
     width: 50px;
-    height: 50px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
