@@ -33,30 +33,55 @@ li{
     height: 50px;
 }
 
+hr{
+    width:1170px;
+    height: 1.5px;
+    background: #e2dddd8a;
+    font-size: 0;
+    border:none;
+}
+
+.hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
 .snickers{
-    height:445px;
+    height:405px;
+    border-radius: 20px;
 }
 
 .productThumb{
     background-color: aquamarine;
-    width: 50%;
+    width: 35%;
+}
+
+.description{
+    
+}
+
+.productInfo{
+    background-color: hotpink;
+    max-width: 400px;
+    margin-top: 4rem;
+    
 }
 
 .contentWrapper{
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
+   
+    
 }
 
 .priceWrapper{
 
     display: flex;
+    align-items: center;
     background-color: aqua;
-}
-
-h3{
-    
-    font-size: 20px;
 }
 
 .lastPrice{
@@ -75,11 +100,20 @@ h3{
     background-color: fuchsia;
     margin-left: 0;
     text-align: left;
+    color:  hsl(223, 64%, 98%);
+    font-weight: bolder;
 }
 
 .descount{
     background-color: hsl(25, 100%, 94%);
     color: hsl(26, 100%, 55%);
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.price{
+    font-weight: bolder;
+    margin-right: 1rem;
 }
 
 .ButtomWrapper{
@@ -94,7 +128,7 @@ h3{
 }
 .customButtom{
     width: 270px;
-    height: 55px;
+    height: 50px;
     border: transparent;
     border-radius: 10px;
     cursor: pointer;
@@ -112,7 +146,7 @@ h3{
     background-color:  hsl(223, 64%, 98%);
     color: hsl(26, 100%, 55%);
     border: none;
-    height:55px;
+    height:50px;
     width: 55px;
     display: flex;
     align-items: center;
@@ -126,7 +160,7 @@ h3{
     background-color:  hsl(223, 64%, 98%);
     color: hsl(26, 100%, 55%);
     border: none;
-    height: 55px;
+    height: 50px;
     width: 55px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -138,7 +172,7 @@ h3{
   .counterValue{
     background-color:  hsl(223, 64%, 98%);
     width: 50px;
-    height: 55px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;

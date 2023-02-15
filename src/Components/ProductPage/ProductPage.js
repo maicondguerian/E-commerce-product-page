@@ -45,18 +45,21 @@ export default function ProductPage() {
                                 <img className={style.avatar} src={userAatar} alt="image-avatar" />
                             </li>
                         </ul>
-                    </div>
-                    <hr />
+                        </div>
+                        <div className={style.hr}>
+                            <hr/>
+                        </div>
                     <div className={style.contentWrapper}>
                         <div className={style.productThumb}>
                             <img className={style.snickers} src={snickers} alt="image-product-snickers" />
                         </div>
                         <div className={style.productInfo}>
-                            <h5 className={style.company}> Sneaker company</h5>
+                            <div>
+                                 <h5 className={style.company}> Sneaker company</h5>
                             <h1> Fall Limited Edition Sneakers</h1>
-                            <p>These low-profile sneakers are your casual wear comparison. Featuring durable nubber outer sole, they'll withstand everything the weather can offer.</p>
+                            <p className={style.description}>These low-profile sneakers are your casual wear comparison. Featuring durable nubber outer sole, they'll withstand everything the weather can offer.</p>
                             <span className={style.priceWrapper}>
-                                <h2>$125.00</h2>
+                                <h2 className={style.price}>$125.00</h2>
                                 <h3  className={style.descount}> 50%</h3>
                             </span>
                             <s className={style.lastPrice}>$250.00</s>
@@ -68,6 +71,9 @@ export default function ProductPage() {
                                 </div>
                                 <CustomButtom customStyle={style.customButtom} Icon={cartIcon} nameButtom='Add to cart' />
                             </div>
+                                
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
