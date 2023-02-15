@@ -1,10 +1,10 @@
 import React, { Fragment, useState, useEffect} from 'react'
 import style from './ProductPage.module.css'
-import userAatar from './assets/image-avatar.png'
-import snickers from './assets/image-product-1.jpg'
+import userAatar from '../assets/image-avatar.png'
+import snickers from '../assets/image-product-1.jpg'
 import CustomButtom from '../Buttom/Buttom'
 import { FaMinus, FaPlus, } from "react-icons/fa";
-import CarrouselThumbMail from './CarrouselThumbMail/carrouselThumbMail'
+import CarrouselThumbMail from '../CarrouselThumbMail/carrouselThumbMail'
 
 
 
@@ -69,7 +69,7 @@ export default function ProductPage() {
                             <s className={style.lastPrice}>$250.00</s>
                             <div className={style.ButtomWrapper}>
                                 <div className={style.counterWrapper}>
-                                    <CustomButtom IconCustom={FaMinus} nameButtom='' customStyle={style.custom} onClick={decrement} />
+                                    <CustomButtom IconCustom={FaMinus} nameButtom='' customStyle={style.customStyle} onClick={decrement} />
                                     <span className={style.counterValue}><h3>{counter}</h3></span>
                                     <CustomButtom IconCustom={FaPlus} nameButtom='' customStyle={style.customRight} onClick={increment} />
                                 </div>

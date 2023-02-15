@@ -1,10 +1,10 @@
 import style from '../CarrouselThumbMail/carrouselThumbMail.module.css'
-import React from "react";
 
-const Card = ({ src }) =>{
+const Card = ({ src , onClick = () =>{}, }) =>{
+
     return(
         <>
-        <div className={style.card}>
+        <div className={style.card} onClick={onClick}>
             <img src={src} />
             
         </div>

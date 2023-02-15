@@ -151,6 +151,11 @@ hr{
     flex-direction: row-reverse;
 }
 
+.customButtom:hover{
+    background-color: rgb(14, 17, 22);
+    transition:ease-in 0.1s ;
+}
+
 
 
 .customRight{
@@ -168,7 +173,7 @@ hr{
     
 }
 
-.custom {
+.customStyle{
     background-color:  hsl(223, 64%, 98%);
     color: hsl(26, 100%, 55%);
     border: none;
