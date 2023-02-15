@@ -64,6 +64,13 @@ h3{
    
 }
 
+.company{
+    text-transform: uppercase;
+    font-weight:bolder;
+    color: hsl(26, 100%, 55%);
+    
+}
+
 .contentWrapper .lastPrice{
     background-color: fuchsia;
     margin-left: 0;

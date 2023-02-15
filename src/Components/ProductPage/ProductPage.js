@@ -52,14 +52,14 @@ export default function ProductPage() {
                             <img className={style.snickers} src={snickers} alt="image-product-snickers" />
                         </div>
                         <div className={style.productInfo}>
-                            <p> Sneaker company</p>
+                            <h5 className={style.company}> Sneaker company</h5>
                             <h1> Fall Limited Edition Sneakers</h1>
                             <p>These low-profile sneakers are your casual wear comparison. Featuring durable nubber outer sole, they'll withstand everything the weather can offer.</p>
                             <span className={style.priceWrapper}>
                                 <h2>$125.00</h2>
                                 <h3  className={style.descount}> 50%</h3>
                             </span>
-                            <p className={style.lastPrice}>$250.00</p>
+                            <s className={style.lastPrice}>$250.00</s>
                             <div className={style.ButtomWrapper}>
                                 <div className={style.counterWrapper}>
                                     <CustomButtom IconCustom={FaMinus} nameButtom='' customStyle={style.custom} onClick={decrement} />
