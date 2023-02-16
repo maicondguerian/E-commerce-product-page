@@ -1,4 +1,4 @@
-import style from '../CarrouselThumbMail/carrouselThumbMail.module.css'
+import style from '../CarrouselThumbNail/carrouselThumbNail.module.css'
 
 const Card = ({ src , onClick = () =>{}, }) =>{
 

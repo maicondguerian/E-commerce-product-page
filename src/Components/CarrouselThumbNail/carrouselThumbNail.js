@@ -2,7 +2,7 @@ import { useState } from "react";
 import Carousel from "react-elastic-carousel";
 import Card from "./Card";
 import { ProductModal } from "../Overlay/ProductModal";
-import style from '../CarrouselThumbMail/carrouselThumbMail.module.css';
+import style from '../CarrouselThumbNail/carrouselThumbNail.module.css';
 import thumbnail1 from '../assets/image-product-1-thumbnail.jpg'
 import thumbnail2 from '../assets/image-product-2-thumbnail.jpg'
 import thumbnail3 from '../assets/image-product-3-thumbnail.jpg'
@@ -17,11 +17,16 @@ import productFullSize5 from '../assets/image-product-4.jpg'
 import productFullSize6 from '../assets/image-product-4.jpg'
 
 
-function CarrouselThumbMail() {
+function CarrouselThumbNail() {
   const images = [thumbnail1, thumbnail2, thumbnail3, thumbnail4, thumbnail5, thumbnail6];
 
-  const breakPoints = [{ itemsToShow: 3, itemsToScroll: 6 }];
-
+  const breakPoints = [
+    { width: 0,
+      itemsToShow: 3 ,
+      itemsToScroll: 6
+     },
+  ];
+  
   const [list] = useState([1, 2, 3, 4, 5, 6]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [modal, setModal] = useState(false);
@@ -65,12 +70,12 @@ function CarrouselThumbMail() {
   ];
 
   return (
-    <div className={`${style.AppCarrouselMini} ${modal ? style.carouselContainer : style.AppCarrouselMini}`}>
+    <div className={`${style.AppCarrouselMini} ${modal ? style.carouselContainerModalOpen : style.AppCarrouselMini}`}>
       <div className={style.carouselWrapper}>
         <ProductModal isOpen={modal} onClose={() => setModal(false)}>
           {selectedImage && (
             <div className={style.fullImageWrapper}>
-              <img src={galleryData.find((img) => img.id === selectedImage)?.imgSrc2} alt="" className={style.fullImage} />
+              <img src={galleryData.find((img) => img.id === selectedImage)?.imgSrc2} alt="" className={style.fullImage}/>
             </div>
           )}
         </ProductModal>
@@ -95,4 +100,4 @@ function CarrouselThumbMail() {
   );
 }
 
-export default CarrouselThumbMail;
+export default CarrouselThumbNail;

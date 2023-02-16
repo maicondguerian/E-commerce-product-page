@@ -33,7 +33,7 @@
     width: auto;
   }
 
-  .carouselContainer {
+  .carouselContainerModalOpen {
     position: absolute;
     bottom: 90px;
     width: 100%;
