@@ -27,7 +27,7 @@ export default function ProductPage() {
     const product = {
         brand: 'Sneaker company',
         name: 'Fall Limited Edition Sneakers',
-        price: 125,
+        price: 12500,
         lastPrice: 250,
         discount: 50,
         description: 'Fall Limited These low-profile sneakers are your perfect casual wear comparison. Featuring a durable rubber outer sole, they\'ll withstand everything the weather can offer.'

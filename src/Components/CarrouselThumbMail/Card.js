@@ -4,12 +4,10 @@ const Card = ({ src , onClick = () =>{}, }) =>{
 
     return(
         <>
-        <div className={style.card} onClick={onClick}>
-            <img src={src} />
-            
-        </div>
-        
-        
+            <div className={style.card} onClick={onClick}>
+                <img src={src} />
+                
+            </div>
         </>
     )
 }

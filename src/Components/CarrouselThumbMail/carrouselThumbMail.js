@@ -65,17 +65,19 @@ function CarrouselThumbMail() {
   ];
 
   return (
-    <div className={style.AppCarrouselMini}>
+    <div className={`${style.AppCarrouselMini} ${modal ? style.carouselContainer : style.AppCarrouselMini}`}>
       <div className={style.carouselWrapper}>
         <ProductModal isOpen={modal} onClose={() => setModal(false)}>
           {selectedImage && (
-            <img src={galleryData.find((img) => img.id === selectedImage)?.imgSrc2} alt="" />
+            <div className={style.fullImageWrapper}>
+              <img src={galleryData.find((img) => img.id === selectedImage)?.imgSrc2} alt="" className={style.fullImage} />
+            </div>
           )}
         </ProductModal>
         <Carousel
           breakPoints={breakPoints}
           pagination={false}
-          enableMouseSwipe={false}
+          enableMouseSwipe={true}
           enableSwipe={true}
         >
           {list.map((item, index) => (

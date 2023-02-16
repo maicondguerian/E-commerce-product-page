@@ -1,9 +1,21 @@
 .overlay{
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .6);
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     right: 0;
     transition:  0.2s linear;
+    
 }
+
+.closeModalButtom{
+    border: none;
+    background-color:hsl(0, 0%, 100%);
+    position:fixed ;
+    top:100px;
+    right:610px;
+    cursor: pointer;
+}
+
+
