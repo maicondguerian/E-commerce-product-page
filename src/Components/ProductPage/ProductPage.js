@@ -93,7 +93,7 @@ export default function ProductPage() {
                                 <div className={style.counterWrapper}>
                                     <CustomButtom IconCustom={FaMinus} nameButtom='' customStyle={style.customStyle} onClick={decrement} />
                                     <span className={style.counterValue}><h3>{counter}</h3></span>
-                                    <CustomButtom IconCustom={FaPlus} nameButtom='' customStyle={style.customRight} onClick={increment} />
+                                    <CustomButtom IconCustom={FaPlus} nameButtom='' customStyle={style.customRightButtom} onClick={increment} />
                                 </div>
                                 <CustomButtom customStyle={style.customButtom} Icon={cartIcon} nameButtom='Add to cart' />
                             </div>
