@@ -34,7 +34,11 @@ li{
 
 .avatar{
     height: 50px;
-    display: none;
+    display: block;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
 }
 
 .title{
