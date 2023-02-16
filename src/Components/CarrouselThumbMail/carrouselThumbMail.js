@@ -31,44 +31,38 @@ function CarrouselThumbMail() {
     setModal(true);
   };
 
-  const Gallery = () => {
-    let data = [
-      {
-        id: 1,
-        imgSrc: thumbnail1,
-        imgSrc2: productFullSize1,
-      },
-      {
-        id: 2,
-        imgSrc: thumbnail2,
-        imgSrc2: productFullSize2,
-      },
-      {
-        id: 3,
-        imgSrc: thumbnail3,
-        imgSrc2: productFullSize3,
-      },
-      {
-        id: 4,
-        imgSrc: thumbnail4,
-        imgSrc2: productFullSize4,
-      },
-      {
-        id: 5,
-        imgSrc: thumbnail5,
-        imgSrc2: productFullSize5,
-      },
-      {
-        id: 6,
-        imgSrc: thumbnail6,
-        imgSrc2: productFullSize6,
-      },
-    ];
-
-    return data;
-  };
-
-  const galleryData = Gallery();
+  const galleryData = [
+    {
+      id: 1,
+      imgSrc: thumbnail1,
+      imgSrc2: productFullSize1,
+    },
+    {
+      id: 2,
+      imgSrc: thumbnail2,
+      imgSrc2: productFullSize2,
+    },
+    {
+      id: 3,
+      imgSrc: thumbnail3,
+      imgSrc2: productFullSize3,
+    },
+    {
+      id: 4,
+      imgSrc: thumbnail4,
+      imgSrc2: productFullSize4,
+    },
+    {
+      id: 5,
+      imgSrc: thumbnail5,
+      imgSrc2: productFullSize5,
+    },
+    {
+      id: 6,
+      imgSrc: thumbnail6,
+      imgSrc2: productFullSize6,
+    },
+  ];
 
   return (
     <div className={style.AppCarrouselMini}>
