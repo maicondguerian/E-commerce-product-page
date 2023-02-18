@@ -72,6 +72,8 @@ function CarrouselThumbNail() {
   ];
 
   return (
+
+    
     <div className={`${style.carouselWrapper} ${modal ? style.carouselContainerModalOpen : style.carouselWrapper}`}>
         <ProductModal isOpen={modal} onClose={() => setModal(false)}>
           {selectedImage && (
@@ -83,7 +85,7 @@ function CarrouselThumbNail() {
         <Carousel
           breakPoints={breakPoints}
           pagination={false}
-          enableMouseSwipe={true}
+          enableMouseSwipe={false}
           enableSwipe={true}
         >
           {list.map((item, index) => (
