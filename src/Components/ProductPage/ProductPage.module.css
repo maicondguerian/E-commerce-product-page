@@ -36,14 +36,19 @@ ul{
 li{
     display: inline-block;
     padding: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
-.avatar{
-    height: 50px;
-    height: 50px;
-    top: 0;
-    cursor: pointer;
-    position: absolute;
+.SignIn{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+}
+
+.SignIn>p{
+  padding: 0 5px;
 }
 
 .title{
@@ -99,17 +104,10 @@ hr{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 1rem;
+        margin-left: 2rem;
         margin-bottom: 2rem;
     }
 }
-
-@media screen and (max-width:720px){
-    .avatar{
-        display: none;
-    }
-}
-   
 
 .priceWrapper{
     display: flex;
@@ -260,3 +258,15 @@ hr{
     color: var(--bg-soft-white);
     font-size: 16px;
   }
+
+  .showAccount{
+    height: 120px;
+    width: 140px;
+    background-color: var(--bg-soft-white);
+    border-radius: 5px;
+    position: absolute;
+    top:50px;
+    right:435px;
+
+}
+  

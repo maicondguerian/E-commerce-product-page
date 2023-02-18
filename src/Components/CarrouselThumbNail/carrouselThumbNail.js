@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Carousel from "react-elastic-carousel";
 import Card from "./Card";
-import { ProductModal } from "../ProductModal/ProductModal";
+import { Modal } from "../ProductModal/Modal";
 import style from '../CarrouselThumbNail/carrouselThumbNail.module.css';
 import thumbnail1 from '../assets/image-product-1-thumbnail.jpg'
 import thumbnail2 from '../assets/image-product-2-thumbnail.jpg'
@@ -75,13 +75,13 @@ function CarrouselThumbNail() {
 
     
     <div className={`${style.carouselWrapper} ${modal ? style.carouselContainerModalOpen : style.carouselWrapper}`}>
-        <ProductModal isOpen={modal} onClose={() => setModal(false)}>
+        <Modal isOpen={modal} onClose={() => setModal(false)}>
           {selectedImage && (
             <div className={style.fullImageWrapper}>
               <img src={galleryData.find((img) => img.id === selectedImage)?.imgSrc2} alt="" className={style.fullImage} />
             </div>
           )}
-        </ProductModal>
+        </Modal>
         <Carousel
           breakPoints={breakPoints}
           pagination={false}
