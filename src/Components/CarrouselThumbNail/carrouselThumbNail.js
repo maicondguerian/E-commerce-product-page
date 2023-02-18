@@ -16,19 +16,21 @@ import productFullSize4 from '../assets/image-product-4.jpg'
 import productFullSize5 from '../assets/image-product-4.jpg'
 import productFullSize6 from '../assets/image-product-4.jpg'
 
-
 function CarrouselThumbNail() {
   const images = [thumbnail1, thumbnail2, thumbnail3, thumbnail4, thumbnail5, thumbnail6];
 
   const breakPoints = [
-    { width: 0,
-      itemsToShow: 3 ,
+    {
+      width: 0,
+      itemsToShow: 3,
       itemsToScroll: 6
-     },
+    },
   ];
-  
+
   const [list] = useState([1, 2, 3, 4, 5, 6]);
+
   const [selectedImage, setSelectedImage] = useState(null);
+
   const [modal, setModal] = useState(false);
 
   const handleImageClick = (id) => {
@@ -70,12 +72,11 @@ function CarrouselThumbNail() {
   ];
 
   return (
-    <div className={`${style.AppCarrouselMini} ${modal ? style.carouselContainerModalOpen : style.AppCarrouselMini}`}>
-      <div className={style.carouselWrapper}>
+    <div className={`${style.carouselWrapper} ${modal ? style.carouselContainerModalOpen : style.carouselWrapper}`}>
         <ProductModal isOpen={modal} onClose={() => setModal(false)}>
           {selectedImage && (
             <div className={style.fullImageWrapper}>
-              <img src={galleryData.find((img) => img.id === selectedImage)?.imgSrc2} alt="" className={style.fullImage}/>
+              <img src={galleryData.find((img) => img.id === selectedImage)?.imgSrc2} alt="" className={style.fullImage} />
             </div>
           )}
         </ProductModal>
@@ -94,9 +95,6 @@ function CarrouselThumbNail() {
           ))}
         </Carousel>
       </div>
-    </div>
- 
-
   );
 }
 

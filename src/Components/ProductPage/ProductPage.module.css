@@ -7,14 +7,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
 
+
+
 :root {
     --font: 'Poppins', sans-serif;
-    --bg-color: #e8e8e8;
-    --card-color: #f5f5f5;
+    --bg-soft-white: hsl(223, 64%, 98%);
     --primary-color: #6085f7;
-    --primary-contrast: #ffffff;
+    --primary-overlay:  rgba(0, 0, 0, .5);
     --warning-color: #f86666;
-    --warning-contrast: #ffffff;
+    --orange-bg: hsl(26, 100%, 55%);
 }
 
 .TopMenuBar{
@@ -38,10 +39,6 @@ li{
     padding: 16px;
 }
 
-/* .cart >li:last-child{
-    
-} */
-
 .avatar{
     height: 50px;
     display: block;
@@ -49,6 +46,7 @@ li{
     display: block;
     position: absolute;
     top: 0;
+    cursor: pointer;
 }
 
 .title{
@@ -97,6 +95,15 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media screen and (max-width:1300px){
+    .contentWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5rem;
+    }
 }
 
 .priceWrapper{
@@ -223,17 +230,19 @@ hr{
   }
 
   .badgeWrapper{
-    display: flex;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     position: relative;
-    
-  }
+    cursor: pointer;
+}
 
-  .cartBadge{
+.cartBadge{
     position: absolute;
-    top:-15px;
-    right: -20px;
+    top:-14px;
+    right: -15px;
     width: 15px;
     height: 15px;
     padding: 5px;
@@ -244,5 +253,4 @@ hr{
     background: hsl(26, 100%, 55%);
     color: var(--primary-contrast);
     font-family: var(--font);
-
   }

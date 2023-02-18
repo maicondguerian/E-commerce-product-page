@@ -1,41 +1,22 @@
-.AppCarrouselMini .card img {
-    background-color: rgb(255, 0, 0);
+.carouselWrapper .card img {
     cursor: pointer;
     border-radius: 10px;
     height: 100px;
     display: flex;
 }
-  
-  .AppCarrouselMini{
-    max-width: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+
   .carouselWrapper{
-    position: relative;
+    min-width: 450px;
     max-width: 450px;
-    width: 100%;
-    display: flex;    
   }
 
   .fullImage{
-    height: 600px;
-   
-  }
-
-  .fullImageWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-    width: auto;
+    height: 600px;   
   }
 
   .carouselContainerModalOpen {
     position: absolute;
-    bottom: 90px;
+    bottom: 50px;
     width: 100%;
-    left: 735px;
+    left: 717px;
   }

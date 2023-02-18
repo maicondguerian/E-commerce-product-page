@@ -1,0 +1,9 @@
+.sideCart{
+    background-color:var(--orange-bg);
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 999 !important;
+}
+

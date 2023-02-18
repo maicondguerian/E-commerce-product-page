@@ -1,19 +1,23 @@
-import { Children } from 'react'
-import style from './ProductModal.module.css'
+import style from './ProductModal.module.css';
 import { GrClose } from "react-icons/gr";
+import Overlay from '../Overlay2/Overlay';
 
-export const ProductModal = ({ isOpen = false ,onClose ,children, size }) => {
 
-
+export const ProductModal = ({ isOpen, onClose, children, onClick }) => {
     return (
         <>
             {isOpen && (
-                <div className={style.overlay} onClick={onClose}>
-                    {children}
-                    <button className={style.closeModalButtom} onClick={onClose} > <GrClose size='30px' /> </button>
-                </div>
+                <Overlay onClick={onClose}>
+                    <div className={style.fullImageWrapper}>
+                        <button
+                            className={style.closeModalButtom}
+                            onClick={onClose}>
+                            <GrClose size='30px' />
+                        </button>
+                        {children}
+                    </div>
+                </Overlay>
             )}
         </>
-    )
-
-}
+    );
+};
