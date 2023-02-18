@@ -7,8 +7,8 @@ export const Modal = ({ isOpen, onClose, children, onMouseOver ,onMouseOut ,show
     return (
         <>
             {isOpen && (
-                <Overlay onClose={onClose} onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
-                    <div>
+                <Overlay onClick={onClose}>
+                    <div  className="modalWrapper"onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
                         {showButton && (
                             <button 
                                 className={style.closeModalButtom}
