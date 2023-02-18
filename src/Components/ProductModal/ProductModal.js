@@ -1,6 +1,6 @@
 import style from './ProductModal.module.css';
 import { GrClose } from "react-icons/gr";
-import Overlay from '../Overlay2/Overlay';
+import Overlay from '../Overlay/Overlay';
 
 
 export const ProductModal = ({ isOpen, onClose, children, onClick }) => {

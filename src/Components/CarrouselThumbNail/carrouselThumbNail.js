@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Carousel from "react-elastic-carousel";
 import Card from "./Card";
-import { ProductModal } from "../Overlay/ProductModal";
+import { ProductModal } from "../ProductModal/ProductModal";
 import style from '../CarrouselThumbNail/carrouselThumbNail.module.css';
 import thumbnail1 from '../assets/image-product-1-thumbnail.jpg'
 import thumbnail2 from '../assets/image-product-2-thumbnail.jpg'

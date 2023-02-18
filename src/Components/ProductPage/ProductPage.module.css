@@ -173,8 +173,6 @@ hr{
     transition:ease-in 0.1s ;
 }
 
-
-
 .customRightButtom{
     background-color:  hsl(223, 64%, 98%);
     color: hsl(26, 100%, 55%);
@@ -253,4 +251,6 @@ hr{
     background: hsl(26, 100%, 55%);
     color: var(--primary-contrast);
     font-family: var(--font);
+    color: var(--bg-soft-white);
+    font-size: 16px;
   }
