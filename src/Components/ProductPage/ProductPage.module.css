@@ -15,8 +15,27 @@
     --primary-overlay:  rgba(0, 0, 0, .5);
     --warning-color: #f86666;
     --orange-bg: hsl(26, 100%, 55%);
+    --padding-f0: 1.5rem;
+    --orange: hsl(25, 97%, 53%);
+    --fs-p2: 2.4rem;
+    --fs-p6:3.8rem;
+    --fs-p1: 1.3rem;
+    --fs-p0: 1rem;
+    --fs-p5: 0.7rem;
+    --fs-p00: 1.5rem;
+    --font-family: "Overpass", sans-serif;
+    --text400: 400;
+    --text700: 700;
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
 }
 
+
+.wrapperContainer{
+    margin-top: var(--fs-p2);
+    height: 900px;
+}
 .TopMenuBar{
     display: flex;
     flex-direction: row;
@@ -26,7 +45,6 @@
 
 .logo{
     cursor: pointer;
-    border: solid 1px;
 }
 
 ul{
@@ -38,29 +56,24 @@ li{
     padding: 16px;
     align-items: center;
     justify-content: center;
-}
-
-.SignIn{
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    position: relative;
-}
-
-.SignIn>p{
-  padding: 0 5px;
+    font-weight: var(--text400);
+    color: var(--dark-grayish-blue);
 }
 
 .title{
-    font-weight: bolder;
+    font-weight: var(--text700);
+    margin-bottom: var(--fs-p0);
+    font-size: 40px;
 }
 
 hr{
     width:1170px;
-    height: 1.5px;
-    background: #e2dddd8a;
+    height: 1px;
+    opacity: 0.5;
+    background: var(--Grayish-blue);
     font-size: 0;
     border:none;
+    margin-top: var(--fs-p1);
 }
 
 .hr{
@@ -71,35 +84,37 @@ hr{
 }
 
 .snickers{
-    height:405px;
+    height:445px;
     border-radius: 20px;
     cursor: pointer;
 }
 
 .productThumb{
-    max-width: 35%;
     width: 520px;
+    margin-top: var(--fs-p6);
 }
 
 .description{
     color:  #2b2b2b;
-    font-size: 15.1px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: var(--text700);
     text-align: left;
 }
 
 .productInfo{
+
     max-width: 420px;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 .contentWrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
+   
 }
 
-@media screen and (max-width:1300px){
+/* @media screen and (max-width:1300px){
     .contentWrapper{
         display: flex;
         flex-direction: column;
@@ -107,7 +122,7 @@ hr{
         margin-left: 2rem;
         margin-bottom: 2rem;
     }
-}
+} */
 
 .priceWrapper{
     display: flex;
@@ -118,7 +133,9 @@ hr{
 .productDescriptionWrapper{
     display: flex;
     flex-direction: column;
-    row-gap: 1.4rem;
+    row-gap: 1.2rem;
+    margin-top: var(--fs-p0);
+    width: 505px;
 }
 
 .company{
@@ -156,8 +173,8 @@ hr{
     
 }
 .customButtom{
-    width: 255px;
-    height: 42px;
+    width: 235px;
+    height: 50px;
     border: transparent;
     border-radius: 5px;
     cursor: pointer;
@@ -180,13 +197,13 @@ hr{
     background-color:  hsl(223, 64%, 98%);
     color: hsl(26, 100%, 55%);
     border: none;
-    height:42px;
-    width: 55px;
+    height:50px;
+    width: 47px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
     cursor: pointer;
     
 }
@@ -195,10 +212,10 @@ hr{
     background-color:  hsl(223, 64%, 98%);
     color: hsl(26, 100%, 55%);
     border: none;
-    height: 42px;
-    width: 55px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    height: 50px;
+    width: 47px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,11 +224,12 @@ hr{
 
   .counterValue{
     background-color:  hsl(223, 64%, 98%);
-    width: 50px;
-    height: 42px;
+    width: 47px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
 
   .custom, .customRight svg{
@@ -227,7 +245,7 @@ hr{
   }
 
   .iconPhotos{
-    margin-top: 1.5rem;
+    margin-top: var(--fs-p2);
     margin-left: -1.5rem;
   }
 

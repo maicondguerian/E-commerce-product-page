@@ -37,7 +37,7 @@ export default function ProductPage() {
         price: 125,
         lastPrice: 250,
         discount: 50,
-        description: 'Fall Limited These low-profile sneakers are your perfect casual wear comparison. Featuring a durable rubber outer sole, they\'ll withstand everything the weather can offer.'
+        description: 'Fall Limited These low-profile sneakers are your perfect casual wear companion. Featuring a very new durable rubber outer sole, they\'ll withstand everything the weather can offer.'
     };
 
     const formatter = new Intl.NumberFormat('en-US', {
@@ -141,16 +141,7 @@ export default function ProductPage() {
                     </ul>
                     <ul className={style.cart}>
                         <li>
-                            <span className={style.SignIn} onMouseOver={handleMouseEnter} onMouseOut={handleMouseLeave}>
-                                <FaRegUser size={25} />
-                                <p>Account</p>
-                                <GrDown />
-                                <Modal isOpen={modalLogin}  showButton={false}>
-                                    <div className={style.showAccount}>
-                                        oi
-                                    </div>
-                                </Modal>
-                            </span>
+                            avatar
                         </li>
                         <li>
                             <span className={style.badgeWrapper} onClick={handleOpenSideBar}>
@@ -183,7 +174,7 @@ export default function ProductPage() {
                             <div className={style.ButtomWrapper}>
                                 <div className={style.counterWrapper}>
                                     <CustomButtom IconCustom={FaMinus} nameButtom='' customStyle={style.customStyle} onClick={decrement} />
-                                    <span className={style.counterValue}><h3> {counter} </h3></span>
+                                    <span className={style.counterValue}><h4> {counter} </h4></span>
                                     <CustomButtom IconCustom={FaPlus} nameButtom='' customStyle={style.customRightButtom} onClick={increment} />
                                 </div>
                                 <CustomButtom customStyle={style.customButtom} Icon={cartIcon} nameButtom='Add to cart' onClick={handleaddToCart} />
@@ -192,6 +183,11 @@ export default function ProductPage() {
                     </div>
                 </div>
             </div>
+            <Modal isOpen={modalLogin}  showButton={false}>
+                <div className={style.showAccount}>
+                    oi
+                </div>
+            </Modal>
             <ToastContainer />
         </>
 

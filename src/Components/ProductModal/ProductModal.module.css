@@ -10,5 +10,6 @@
 }
 
 .modalWrapper{
-  z-index: 1001;
+  z-index: 99;
+  position: relative;
 }
